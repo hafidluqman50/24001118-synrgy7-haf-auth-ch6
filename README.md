@@ -14,9 +14,11 @@
    
 ![alt text](./database_connected.png)
 
-11. Access endpoint `/api-docs` for Swagger Documentation API
+11. for super admin login, use email `superadmin@email.com` and password `superadmin`
 
-12. Have fun and enjoy! (Becareful it's fragile)
+12. Access endpoint `/api-docs` for Swagger Documentation API
+
+13. Have fun and enjoy! (Becareful it's fragile)
 
 ### ERD (Entity Relationship Diagram)
 ![alt text](./ERD_DATABASE.png)
