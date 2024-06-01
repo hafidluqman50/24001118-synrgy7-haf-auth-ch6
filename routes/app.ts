@@ -7,12 +7,14 @@ import authRoutes from "./auth/api";
 import { authCheck, isAdministrator } from "@Middlewares/Kernel";
 import swaggerUI from 'swagger-ui-express'
 import YAML from 'yamljs'
+import cors from 'cors'
 
 const swaggerDocuments = YAML.load('api-synrgy7-ch6-docs.yaml')
 
 const app: Express = express();
 const port: string | number = process.env.PORT || 3000;
 
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
